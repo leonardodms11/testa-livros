@@ -1,0 +1,293 @@
+{
+  "id": "bd671a11-3025-415e-acb9-149546102818",
+  "version": "2.0",
+  "name": "testa-livros",
+  "url": "https://www.submarino.com.br",
+  "tests": [{
+    "id": "cd312bf6-5338-4007-ae61-89a0ba354966",
+    "name": "Captação infos Submarino",
+    "commands": [{
+      "id": "7c8c658b-1a6d-4e5b-9c24-eab9cba353f0",
+      "comment": "",
+      "command": "open",
+      "target": "/categoria/livros",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7ba61c2-19aa-4d29-9212-fc37ae7acab7",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.col-md-12:nth-child(2) > div > .row > .col-xs-12",
+      "targets": [
+        ["css=.col-md-12:nth-child(2) > div > .row > .col-xs-12", "css:finder"],
+        ["xpath=//div[@id='sidebar-top']/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//aside/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "301dc7cd-374b-495f-b870-ecc16ad44e65",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-list:nth-child(1) > .filter-list-item:nth-child(1) > .filter-list-link-basic > span",
+      "targets": [
+        ["css=.filter-list:nth-child(1) > .filter-list-item:nth-child(1) > .filter-list-link-basic > span", "css:finder"],
+        ["xpath=//div[@id='collapse-categorias']/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//section/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f34b63c-f7b6-4828-8556-c272d0ee484f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "linkText=1",
+      "targets": [
+        ["linkText=1", "linkText"],
+        ["css=.active > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'1')])[6]", "xpath:link"],
+        ["xpath=//div[@id='content-middle']/div[4]/div/div/div/div[2]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/categoria/livros/ciencias-humanas-e-sociais?ordenacao=topSelling&origem=blanca')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "11cea54c-21b6-4fdd-9329-56d7bd94a65f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row > .product-grid-item:nth-child(1) .TitleUI-bwhjk3-15",
+      "targets": [
+        ["css=.row > .product-grid-item:nth-child(1) .TitleUI-bwhjk3-15", "css:finder"],
+        ["xpath=//div[@id='content-middle']/div[4]/div/div/div/div/div/div/div[2]/a/section/div[2]/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Síndrome Da Impostora - Acompanha Marcador De Página Autografado - 1ª Ed.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58b63b5c-9131-4085-98f4-46b8904350b8",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.Tr-sc-1wy23hs-3:nth-child(13) > .Td-sc-1wy23hs-5:nth-child(2) > .TextUI-sc-12tokcy-0",
+      "targets": [
+        ["css=.Tr-sc-1wy23hs-3:nth-child(13) > .Td-sc-1wy23hs-5:nth-child(2) > .TextUI-sc-12tokcy-0", "css:finder"],
+        ["xpath=//div[@id='info-section']/div[2]/section/div[2]/section/table/tbody/tr[13]/td[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[13]/td[2]/span", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "f0bdf46a-1d21-4c7b-943c-379e08d54da2",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.Tr-sc-1wy23hs-3:nth-child(13) > .Td-sc-1wy23hs-5:nth-child(2) > .TextUI-sc-12tokcy-0",
+      "targets": [
+        ["css=.Tr-sc-1wy23hs-3:nth-child(13) > .Td-sc-1wy23hs-5:nth-child(2) > .TextUI-sc-12tokcy-0", "css:finder"],
+        ["xpath=//div[@id='info-section']/div[2]/section/div[2]/section/table/tbody/tr[13]/td[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[13]/td[2]/span", "xpath:position"]
+      ],
+      "value": "isbn"
+    }, {
+      "id": "33ce3e01-27b8-4634-a2e3-812c4bf68a34",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.Tr-sc-1wy23hs-3:nth-child(3) > .Td-sc-1wy23hs-5:nth-child(2) > .TextUI-sc-12tokcy-0",
+      "targets": [
+        ["css=.Tr-sc-1wy23hs-3:nth-child(3) > .Td-sc-1wy23hs-5:nth-child(2) > .TextUI-sc-12tokcy-0", "css:finder"],
+        ["xpath=//div[@id='info-section']/div[2]/section/div[2]/section/table/tbody/tr[3]/td[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/span", "xpath:position"]
+      ],
+      "value": "autor"
+    }]
+  }, {
+    "id": "1655869b-5567-4cdb-a679-1ab7893b5696",
+    "name": "Teste Americanas",
+    "commands": [{
+      "id": "dd72f554-60a7-4515-8ba1-c4a51aa850fa",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.americanas.com.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d951afdb-d35b-4483-94fe-24358f2cdb58",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=h_search-btn",
+      "targets": [
+        ["id=h_search-btn", "id"],
+        ["css=#h_search-btn", "css:finder"],
+        ["xpath=//button[@id='h_search-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='h_search']/form/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "5c632396-e170-481c-859f-f73a171be1ec",
+      "comment": "",
+      "command": "type",
+      "target": "id=h_search-input",
+      "targets": [
+        ["id=h_search-input", "id"],
+        ["name=conteudo", "name"],
+        ["css=#h_search-input", "css:finder"],
+        ["xpath=//input[@id='h_search-input']", "xpath:attributes"],
+        ["xpath=//div[@id='h_search']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${isbn}"
+    }, {
+      "id": "19527fa5-4fea-4dcf-a700-09552503cd61",
+      "comment": "",
+      "command": "click",
+      "target": "id=h_search-btn",
+      "targets": [
+        ["id=h_search-btn", "id"],
+        ["css=#h_search-btn", "css:finder"],
+        ["xpath=//button[@id='h_search-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='h_search']/form/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51b49fb9-f661-4483-bc3e-6515c71bd221",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.epVkvq",
+      "targets": [
+        ["css=.epVkvq", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "16b5adca-a048-498f-ada5-5714573770a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.src__Image-xr9q25-0",
+      "targets": [
+        ["css=.src__Image-xr9q25-0", "css:finder"],
+        ["xpath=//img[contains(@src,'https://images-americanas.b2w.io/produtos/01/00/img/2324633/6/2324633672_1GG.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/div/a/div[2]/div/picture/img", "xpath:idRelative"],
+        ["xpath=//div/picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a0d8ec4-7f61-4654-8d07-6c59a000669c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.src__DeskWrapper-wbypax-0",
+      "targets": [
+        ["css=.src__DeskWrapper-wbypax-0", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[7]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[7]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "d48e9b48-f853-4744-a093-137edfc3255e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.src__View-wbypax-3:nth-child(3) > .src__Text-wbypax-4:nth-child(2)",
+      "targets": [
+        ["css=.src__View-wbypax-3:nth-child(3) > .src__Text-wbypax-4:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[7]/table/tr[3]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'Rafa Brites')]", "xpath:innerText"]
+      ],
+      "value": "${autor}"
+    }]
+  }, {
+    "id": "45596341-2d7c-4a19-b7e1-4d58af04cc99",
+    "name": "Teste Shoptime",
+    "commands": [{
+      "id": "d45c5158-e9e7-43ae-bbf2-bfdfa6cdb46f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.shoptime.com.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8179e364-f6c6-4862-9db0-f6824723cb1c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=h_user",
+      "targets": [
+        ["id=h_user", "id"],
+        ["css=#h_user", "css:finder"],
+        ["xpath=//div[@id='h_user']", "xpath:attributes"],
+        ["xpath=//div[@id='header-middle']/div/div[4]", "xpath:idRelative"],
+        ["xpath=//div/div[4]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "40bea2fa-0ec0-41bf-ae6c-9353ebc4731f",
+      "comment": "",
+      "command": "type",
+      "target": "id=h_search-input",
+      "targets": [
+        ["id=h_search-input", "id"],
+        ["name=conteudo", "name"],
+        ["css=#h_search-input", "css:finder"],
+        ["xpath=//input[@id='h_search-input']", "xpath:attributes"],
+        ["xpath=//div[@id='h_search']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${isbn}"
+    }, {
+      "id": "894fe439-1391-425a-86bd-521f64bbbba7",
+      "comment": "",
+      "command": "submit",
+      "target": "id=h_search-btn",
+      "targets": [
+        ["id=h_search-btn", "id"],
+        ["css=#h_search-btn", "css:finder"],
+        ["xpath=//button[@id='h_search-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='h_search']/form/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f6caf0c-6249-44df-919c-9210f3c4f522",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.ImageUI-sc-9rtsvr-0",
+      "targets": [
+        ["css=.ImageUI-sc-9rtsvr-0", "css:finder"],
+        ["xpath=//img[@alt='Síndrome Da Impostora - Acompanha Marcador De Página Autografado - 1ª Ed.']", "xpath:img"],
+        ["xpath=//div[@id='content-middle']/div[6]/div/div/div/div/div/div/a/div/section/div[2]/div/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "0cdfa3c8-5dae-4be1-9955-850df52f716c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ImageUI-sc-9rtsvr-0",
+      "targets": [
+        ["css=.ImageUI-sc-9rtsvr-0", "css:finder"],
+        ["xpath=//img[@alt='Síndrome Da Impostora - Acompanha Marcador De Página Autografado - 1ª Ed.']", "xpath:img"],
+        ["xpath=//div[@id='content-middle']/div[6]/div/div/div/div/div/div/a/div/section/div[2]/div/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": "autorcult"
+    }, {
+      "id": "59cdc3db-efd1-42b1-a873-464adaff35da",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.Tr-sc-1wy23hs-3:nth-child(3) > .Td-sc-1wy23hs-5:nth-child(2) > .TextUI-sc-12tokcy-0",
+      "targets": [
+        ["css=.Tr-sc-1wy23hs-3:nth-child(3) > .Td-sc-1wy23hs-5:nth-child(2) > .TextUI-sc-12tokcy-0", "css:finder"],
+        ["xpath=//div[@id='info-section']/div[2]/section/div/div[3]/table/tbody/tr[3]/td[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Rafa Brites')]", "xpath:innerText"]
+      ],
+      "value": "${autor}"
+    }]
+  }],
+  "suites": [{
+    "id": "1a893822-120a-414c-a613-06a97c3ec826",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cd312bf6-5338-4007-ae61-89a0ba354966"]
+  }],
+  "urls": ["https://www.submarino.com.br/", "https://www.amazon.com.br/", "https://www.americanas.com.br/", "https://www3.livrariacultura.com.br/"],
+  "plugins": []
+}
